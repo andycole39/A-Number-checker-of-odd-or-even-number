@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting even numbers from 1-50</title>
+</head>
+<body>
+    <form method="post" action="">
+        <label>Enter your number:</label> <br>
+        <input type="number" id="input-num">
+        <button type="submit" onclick="odd_even()">Check number..</button>
+        <p id="demo"></p>
+    </form>
+    <script>
+function odd_even(){
+    var a;
+    a = Number(document.getElementById("input-num").value);
+    if((a % 2)==0 ){
+        document.write("Even Number");
+    }
+    else{
+        document.write("Odd Number")
+    }
+}
+
+    </script>
+</body>
+</html>
